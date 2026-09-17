@@ -34,9 +34,17 @@
             app:titleMarginBottom="10dp"
             app:titleTextColor="@color/light_red" />
 
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:text="Points" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="bottom"
             android:orientation="horizontal">
 
             <TextView
@@ -49,14 +57,23 @@
                 android:paddingEnd="20dp"
                 android:text="TextView" />
 
-            <Button
-                android:id="@+id/aktualisieren"
+            <EditText
+                android:id="@+id/editTextPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/guess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="aktualisieren" />
+                android:text="Versuch" />
         </LinearLayout>
     </LinearLayout>
 
